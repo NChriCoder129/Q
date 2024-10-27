@@ -1,5 +1,3 @@
-average = 0
-iterated = 0
 import django
 from django.conf import settings
 from django.template import Template, Context
@@ -20,6 +18,8 @@ import keyboard
 from groq import Groq
 from datetime import datetime
 from keras.models import load_model
+average = 0
+iterated = 0
 htmltext = ""
 main_a = ""
 main_b = ""
