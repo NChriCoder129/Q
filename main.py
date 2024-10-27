@@ -3,6 +3,9 @@ from django.conf import settings
 from django.template import Template, Context
 import http.server
 import socketserver
+
+
+
 import os
 import re
 import random
@@ -18,6 +21,7 @@ import keyboard
 from groq import Groq
 from datetime import datetime
 from keras.models import load_model
+from flask import Flask, request, render_template
 average = 0
 iterated = 0
 htmltext = ""
